@@ -45,15 +45,34 @@ add_book/
 ├── logging_config.py
 requirements.txt
 README.md
-⚙️ Setup & Run Locally
-1️⃣ Clone repository
-git clone https://github.com/<your-username>/address-book-api.git
+
+
+Setup & Run Locally
+
+step1.
+git clone https://github.com/sreevishnukiran/address-book-api.git
 cd address-book-api
-2️⃣ Create virtual environment
+
+step2.
+Create virtual environment
 python -m venv venv
-source venv/bin/activate   # Linux / Mac
-venv\Scripts\activate      # Windows
-3️⃣ Install dependencies
-pip install -r requirements.txt
-4️⃣ Run application
-uvicorn add_book.main:app --reload
+
+
+step3.
+  source venv/bin/activate   # Linux / Mac
+  venv\Scripts\activate      # Windows
+
+
+step4.
+  Install dependencies
+  pip install -r requirements.txt
+
+step5.
+ Run application
+  uvicorn add_book.main:app --reload
+
+
+step6
+  check the apis
+  the application is running in default 8000 port ..copy the below link and open in browser to access the apis
+  http://127.0.0.1:8000/docs
