@@ -55,6 +55,8 @@ cd address-book-api
 
 step2.
 #Create virtual environment
+
+
 python -m venv venv
 
 
@@ -65,14 +67,20 @@ step3.
 
 step4.
   #Install dependencies
+
+
   pip install -r requirements.txt
 
 step5.
  #Run application
+
+
   uvicorn add_book.main:app --reload
 
 
 step6
   #check the apis
+
+
   the application is running in default 8000 port ..copy the below link and open in browser to access the apis
   http://127.0.0.1:8000/docs
