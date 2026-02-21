@@ -51,8 +51,11 @@ README.md
 ### 1️⃣ Clone repository
 
 ```
-git clone https://github.com/sreevishnukiran/address-book-api.git
-cd address-book-api
+git clone https://github.com/sreevishnukiran/addressbook.git
+
+
+````
+cd addressbook/
 ```
 
 ### 2️⃣ Create virtual environment
@@ -139,8 +142,6 @@ http://127.0.0.1:8000/docs
 
 * Pagination support
 * Authentication
-* Geospatial indexing
-* Unit tests
 
 ---
 
