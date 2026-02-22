@@ -17,24 +17,25 @@ def create_address(address: AddressCreate, db: Session = Depends(get_db)):
     return db_address
 
 
-# @router.get("/", response_model=list[AddressResponse])
-# def list_addresses(db: Session = Depends(get_db)):
-#     return db.query(Address).all()
 @router.get("/", response_model=list[AddressResponse])
-def list_addresses(
-    name: Optional[str] = Query(None),
-    city: Optional[str] = Query(None),
-    db: Session = Depends(get_db)
-):
-    query = db.query(Address)
+def list_addresses(db: Session = Depends(get_db)):
+    return db.query(Address).all()
+#if search with name or by cityname
+# @router.get("/", response_model=list[AddressResponse])
+# def list_addresses(
+#     name: Optional[str] = Query(None),
+#     city: Optional[str] = Query(None),
+#     db: Session = Depends(get_db)
+# ):
+#     query = db.query(Address)
 
-    if name:
-        query = query.filter(Address.name.ilike(f"%{name}%"))
+#     if name:
+#         query = query.filter(Address.name.ilike(f"%{name}%"))
 
-    if city:
-        query = query.filter(Address.city.ilike(f"%{city}%"))
+#     if city:
+#         query = query.filter(Address.city.ilike(f"%{city}%"))
 
-    return query.all()
+#     return query.all()
 
 
 @router.put("/{address_id}", response_model=AddressResponse)
