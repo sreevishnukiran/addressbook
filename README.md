@@ -137,6 +137,10 @@ http://127.0.0.1:8000/docs
 * Included logging middleware for request tracing
 
 ---
+## 📌 Reference
+##for distance calculation
+* https://www.youtube.com/watch?v=HaGj0DjX8W8
+---
 
 ## 📌 Future Improvements
 
